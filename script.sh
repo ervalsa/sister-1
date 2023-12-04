@@ -18,6 +18,9 @@ docker container start command
 
 docker container logs command
 
+# LABEL Instruction
+docker build -t ervlsa/label label
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
