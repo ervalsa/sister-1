@@ -39,6 +39,15 @@ docker container start copy
 
 docker container logs copy
 
+# IGNORE Instruction
+docker build -t ervlsa/ignore ignore
+
+docker container create --name ignore ervlsa/ignore
+
+docker container start ignore
+
+docker container logs ignore
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
