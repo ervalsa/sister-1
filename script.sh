@@ -30,6 +30,15 @@ docker container start add
 
 docker container logs add
 
+# COPY Instruction
+docker build -t ervlsa/copy copy
+
+docker container create --name copy ervlsa/copy
+
+docker container start copy
+
+docker container logs copy
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
