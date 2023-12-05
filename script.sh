@@ -89,6 +89,15 @@ docker container stop volume
 
 docker volume ls
 
+# WORKDIR Instructions
+docker build -t ervlsa/workdir workdir
+
+docker container create --name workdir -p 8080:8080 ervlsa/workdir
+
+docker container start workdir
+
+docker container exec -i -t workdir /bin/sh
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
