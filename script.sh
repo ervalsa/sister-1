@@ -74,6 +74,21 @@ docker container logs environment
 
 docker container stop environment
 
+# VOLUME Instructions
+docker build -t ervlsa/volume volume
+
+docker image inspect ervlsa/volume
+
+docker container create --name volume -p 8080:8080 ervlsa/volume
+
+docker container start volume
+
+docker container logs volume
+
+docker container stop volume
+
+docker volume ls
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
