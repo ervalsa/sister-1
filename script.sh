@@ -61,6 +61,19 @@ docker container ls
 
 docker container stop expose
 
+# ENVIRONMENT Instruction
+docker build -t ervlsa/environment environment
+
+docker image inspect ervlsa/environment
+
+docker container create --name environment --env APP_PORT=8080 -p 8080:8080 ervlsa/environment
+
+docker container start environment
+
+docker container logs environment
+
+docker container stop environment
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
