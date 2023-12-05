@@ -48,6 +48,19 @@ docker container start ignore
 
 docker container logs ignore
 
+# EXPOSE Instruction
+docker build -t ervlsa/expose expose
+
+docker image inspect ervlsa/expose
+
+docker container create --name expose -p 8080:8080 ervlsa/expose
+
+docker container start expose
+
+docker container ls
+
+docker container stop expose
+
 # Perintah untuk melihat seluruh docker image di komputer
 docker image ls
 
